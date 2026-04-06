@@ -17,11 +17,13 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 20px;
+            gap: 15px;
             margin-top: 30px;
         }
         .gallery img {
-            max-width: 200px;
+            width: 200px; /* Reduced width */
+            height: 250px; /* Fixed height to make them all match */
+            object-fit: cover; /* This stops the photos from looking stretched */
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         }
